@@ -32,43 +32,44 @@
             ' 
             lBoxOptions.BorderStyle = System.Windows.Forms.BorderStyle.None
             lBoxOptions.FormattingEnabled = True
-            lBoxOptions.ItemHeight = 15
             lBoxOptions.Items.AddRange(New Object() {"     Lists", "     Stacks", "    Queues", "  Binary Trees", "    Graphs", " Algorithms"})
-            lBoxOptions.Location = New Drawing.Point(115, 108)
+            lBoxOptions.Location = New System.Drawing.Point(131, 144)
+            lBoxOptions.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
             lBoxOptions.Name = "lBoxOptions"
-            lBoxOptions.Size = New Drawing.Size(83, 165)
+            lBoxOptions.Size = New System.Drawing.Size(285, 140)
             lBoxOptions.TabIndex = 0
-            AddHandler lBoxOptions.SelectedIndexChanged, AddressOf lBoxOptions_SelectedIndexChanged
             ' 
             ' lblTitle
             ' 
             lblTitle.AutoSize = True
-            lblTitle.Font = New Drawing.Font("Microsoft Sans Serif", 27.7499962F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, 0)
-            lblTitle.Location = New Drawing.Point(37, 25)
+            lblTitle.Font = New System.Drawing.Font("Modern No. 20", 36F, Drawing.FontStyle.Bold Or Drawing.FontStyle.Italic, Drawing.GraphicsUnit.Point, CByte(0))
+            lblTitle.Location = New System.Drawing.Point(219, 9)
             lblTitle.Name = "lblTitle"
-            lblTitle.Size = New Drawing.Size(249, 42)
+            lblTitle.Size = New System.Drawing.Size(374, 62)
             lblTitle.TabIndex = 1
             lblTitle.Text = "Final Proyect"
             ' 
             ' lblselectoption
             ' 
             lblselectoption.AutoSize = True
-            lblselectoption.Font = New Drawing.Font("Verdana", 11.25F, Drawing.FontStyle.Regular, Drawing.GraphicsUnit.Point, 0)
-            lblselectoption.ForeColor = Drawing.Color.Blue
-            lblselectoption.Location = New Drawing.Point(97, 77)
+            lblselectoption.Font = New System.Drawing.Font("Segoe UI Variable Display Semib", 13.8F, Drawing.FontStyle.Bold, Drawing.GraphicsUnit.Point, CByte(0))
+            lblselectoption.ForeColor = Drawing.SystemColors.ActiveCaptionText
+            lblselectoption.Location = New System.Drawing.Point(108, 97)
             lblselectoption.Name = "lblselectoption"
-            lblselectoption.Size = New Drawing.Size(131, 18)
+            lblselectoption.Size = New System.Drawing.Size(369, 31)
             lblselectoption.TabIndex = 2
-            lblselectoption.Text = "Select An Option"
+            lblselectoption.Text = "Estructuras de datos y Algoritmos"
             ' 
             ' Form1
             ' 
-            AutoScaleDimensions = New Drawing.SizeF(7F, 15F)
+            AutoScaleDimensions = New System.Drawing.SizeF(8F, 20F)
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-            ClientSize = New Drawing.Size(324, 354)
+            BackColor = Drawing.SystemColors.ActiveCaption
+            ClientSize = New System.Drawing.Size(1003, 463)
             Controls.Add(lblselectoption)
             Controls.Add(lblTitle)
             Controls.Add(lBoxOptions)
+            Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
             Name = "Form1"
             Text = "Form1"
             ResumeLayout(False)
